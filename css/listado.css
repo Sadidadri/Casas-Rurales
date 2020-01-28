@@ -1,0 +1,119 @@
+:root{
+    --color-header: #006b33; 
+    --color-footer: #003300;
+    --color-fondo-texto: rgba(0,107,51,0.75);
+    --color-texto:#FFF;
+
+    --color-nav:#7e962b;
+    --color-fondo:#c3c6c8;
+    --color-fondoBoton:#898b8c;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--color-header);
+}
+#textoHeader{
+    color:var(--color-texto);
+}
+#logo{
+    width: 4rem;
+}
+nav{
+    min-height: 8vh;
+    background-color: var(--color-nav);
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+}
+select{
+    width: 6rem;
+}
+h4{
+    color: var(--color-texto);
+}
+#principal > .anuncio{
+    background-color: var(--color-fondoBoton);
+}
+.anuncio > .info{
+    padding: 0.5rem;
+    background-color: var(--color-fondo);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "miniatura titulo"
+    "miniatura localizacion"
+    "miniatura descripcion"
+    "valoracion precio";
+    column-gap: 3px;
+    row-gap: 3px;
+}
+.miniaturaAnuncio{
+    width: 100%;
+    grid-area: miniatura;
+    
+
+}
+.tituloAnuncio{
+    grid-area: titulo;
+    font-size: 1.4rem;
+}
+.localizacionAnuncio{
+    grid-area: localizacion;
+    font-size: 0.8rem;
+}
+.descripcionAnuncio{
+    grid-area: descripcion;
+    font-size: 0.7rem;
+}
+.valoracionAnuncio{
+    display: flex;
+    flex-direction: column;
+    grid-area: valoracion;
+}
+.valoracionAnuncio > a{
+    font-size: 0.6rem;
+    align-self: center;
+}
+.valoracionImg{
+    width: 100%;
+}
+.precioAnuncio{
+    font-size: 1.7rem;
+    grid-area: precio;
+    justify-self: end;
+    align-self: end;
+}
+.reserva{
+    padding: 0.6rem;
+    text-align: center;
+}
+.botonReservar{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--color-texto);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: var(--color-header);
+    border-color: var(--color-footer);
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 15px;
+}
+footer{
+    background-color: var(--color-footer);
+    min-height: 2vh;
+}

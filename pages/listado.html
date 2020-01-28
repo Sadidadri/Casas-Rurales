@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/listado.css">
+    <title>Lista de Casas Rurales</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="../imagenes/logo.png" alt="logo" >
+        <h1 id="textoHeader">RuralEscape</h1>
+    </header>
+    <nav>
+        <h4>Ciudad:</h4>
+        <select name="ciudades" id="ciudadesSelect">
+            <option value="cordoba">Córdoba</option>
+            <option value="malaga">Málaga</option>
+            <option value="granada">Granada</option>
+            <option value="sevilla">Sevilla</option>
+            <option value="malaga">Jaén</option>
+            <option value="huelva">Huelva</option>
+            <option value="almeria">Almería</option>
+            <option value="cadiz">Cádiz</option>
+        </select>
+        <h4>Ordenar por:</h4>
+        <select name="filtroOrden" id="filtroOrden">
+            <option value="precioAsc">Precio Ascendente</option>
+            <option value="precioDesc">Precio Descendente</option>
+            <option value="mayorValoracion">Mayor Valoracion</option>
+        </select>
+    </nav>
+    <main>
+        <section id="principal">
+            <article class="anuncio">
+                <div class="info">
+                    <img class="miniaturaAnuncio" src="../imagenes/anuncio1.jpg" alt="anuncio1">
+                    <h2 class="tituloAnuncio">Amplia casa de campo en Guarromán</h2>
+                    <p class="localizacionAnuncio">Guarromán (Jaén)</p>
+                    <p class="descripcionAnuncio">Casa de campo con jardín, bonitas vistas, ideal para desconectar y conocer el pueblo.</p>
+                    <div class="valoracionAnuncio">
+                        <img class="valoracionImg" src="../imagenes/5stars.png" alt="valoracion1">
+                        <a href="">(15 valoraciones)</a>
+                    </div>
+                    <h2 class="precioAnuncio">139€/noche</h2>
+                </div>
+                <div class="reserva">
+                    <a href="./ejemploAnuncioDetallado.html"><button class="botonReservar">Reservar</button></a>
+                </div>
+            </article>
+            <article class="anuncio">
+                <div class="info">
+                    <img class="miniaturaAnuncio" src="../imagenes/anuncio2.jpg" alt="anuncio1">
+                    <h2 class="tituloAnuncio">Casa Rural Finca Buytrón, Montilla</h2>
+                    <p class="localizacionAnuncio">Montilla (Córdoba)</p>
+                    <p class="descripcionAnuncio">La Casa Rural Finca Buytrón se encuentra en Montilla y ofrece alojamiento con aire acondicionado, piscina privada, vistas a la montaña y terraza. Esta casa rural ofrece vistas a la piscina, jardín y WiFi gratuita.</p>
+                    <div class="valoracionAnuncio">
+                        <img class="valoracionImg" src="../imagenes/5stars.png" alt="valoracion1">
+                        <a href="">(27 valoraciones)</a>
+                    </div>
+                    <h2 class="precioAnuncio">200€/noche</h2>
+                </div>
+                <div class="reserva">
+                    <a href="./ejemploAnuncioDetallado.html"><button class="botonReservar">Reservar</button></a>
+                </div>
+            </article>
+            <article class="anuncio">
+                <div class="info">
+                    <img class="miniaturaAnuncio" src="../imagenes/anuncio3.jpg" alt="anuncio1">
+                    <h2 class="tituloAnuncio">Cortijo las Tres Palmeras Écija</h2>
+                    <p class="localizacionAnuncio">Écija (Sevilla)</p>
+                    <p class="descripcionAnuncio">Cortijo ubicado en el pueblo de Écija, su piscina está tratada y disponible para toda la temporada del año..</p>
+                    <div class="valoracionAnuncio">
+                        <img class="valoracionImg" src="../imagenes/5stars.png" alt="valoracion1">
+                        <a href="">(8 valoraciones)</a>
+                    </div>
+                    <h2 class="precioAnuncio">145€/noche</h2>
+                </div>
+                <div class="reserva">
+                    <a href="./ejemploAnuncioDetallado.html"><button class="botonReservar">Reservar</button></a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
