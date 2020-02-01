@@ -48,11 +48,11 @@
             <form action="#">
                 <label for="nombre">Nombre:</label><input id="nombre" type="text">  
                 <label for="apellidos">Apellidos:</label><input id="apellidos" type="text">
-                <label for="telefono">Teléfono:</label><input id="telefono" type="text">
-                <label for="email">E-mail:</label><input id="email" type="text">
-                <label for="diaEntrada">Día Entrada:</label><input id="diaEntrada" type="text">
-                <label for="diaSalida">Día Salida:</label><input id="diaSalida" type="text">
-                <label for="nPersonas">Nº personas:</label><input id="nPersonas" type="text">
+                <label for="telefono">Teléfono:</label><input id="telefono" type="number" pattern="[0-9]{9}">
+                <label for="email">E-mail:</label><input id="email" type="email">
+                <label for="diaEntrada">Día Entrada:</label><input id="diaEntrada" type="date">
+                <label for="diaSalida">Día Salida:</label><input id="diaSalida" type="date">
+                <label for="nPersonas">Nº personas:</label><input id="nPersonas" type="number">
                 <button id="botonReservar">Reservar</button>
             </form>
         </section>

@@ -31,7 +31,7 @@ span{
     padding: 0.25rem;
     color:var(--color-texto);
     background-color: var(--color-fondo-texto);
-    font-size: 3rem;
+    font-size: 2.8rem;
     border-radius: 15px;
 }
 #logo{
@@ -74,4 +74,41 @@ footer{
     background-color: var(--color-footer);
     min-height: 2vh;
 }
-
+/* Diseño tablet */
+@media (min-width: 600px) {
+    #principal{
+        background-size: cover;
+        min-height: 72vh;
+    }
+    #empezarSection{
+        min-height: 23vh;
+    }
+    #logo > img{
+        width: 40vw;
+    }
+    #texto > span{
+        font-size: 5rem;
+    }
+    #botonEmpezar{
+        font-size: 3rem;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-width: 5px;
+        border-radius: 55px;
+    }
+}
+/* Diseño de monitor */
+@media (min-width: 1025px) {
+    #logo > img{
+        width: 25vw;
+    }
+    #principal{
+        background-size: cover;
+        min-height: 65vh;
+    }
+    #empezarSection{
+        min-height: 30vh;
+    }
+}
