@@ -42,6 +42,9 @@ select{
 h4{
     color: var(--color-texto);
 }
+#lateral{
+    display: none;
+}
 #principal > .anuncio{
     background-color: var(--color-fondoBoton);
 }
@@ -139,6 +142,9 @@ footer{
         grid-area: miniaturaImagenes;
         display: inline;
     }
+    .miniaturas > img:hover{
+        transform: scale(1.2);
+    }
     .miniaturas > img{
         width: 30%;
     }
@@ -164,5 +170,38 @@ footer{
 }
 /* Diseño de monitor */
 @media (min-width: 1025px) {
-    
+    main{
+        display: flex;
+    }
+    #lateral{
+        padding-top: 2rem;
+        border-right: 0.5rem solid var(--color-fondoBoton);
+        background-color: var(--color-fondo);
+        width: 25vw;
+        display: block;
+    }
+    #slider{
+        margin: 1rem;
+    }
+    #rangoPrecios{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #rangoPrecios > input{
+        margin: 5px 10px;
+        width: 3.5rem;
+    }
+    #principal{
+        width: 75vw;
+    }
+    #caracteristicas{
+        padding: 1rem;
+        width: 50%;
+        margin: 0 auto;
+    }
+    #caracteristicas > div{
+        margin: 0.5rem 0;
+        font-size: 1.05rem;
+    }
 }

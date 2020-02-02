@@ -11,8 +11,8 @@
 </head>
 <body>
     <header>
-        <img id="logo" src="../imagenes/logo.png" alt="logo" >
-        <h1 id="textoHeader">RuralEscape</h1>
+        <a href="./listado.html"><img id="logo" src="../imagenes/logo.png" alt="logo" ></a>
+        <a href="./listado.html"><h1 id="textoHeader">RuralEscape</h1></a>
     </header>
     <main>
         <section id="info">
@@ -22,18 +22,23 @@
                 <img src="../imagenes/anuncio2_3.jpg" alt="imgAnuncio">
             </div>
             <h2 id="tituloCasaRural">Casa Rural Finca Buytrón, Montilla</h2>
-            <div id="valoracion"><img src="../imagenes/5stars.png" alt="5stars"><a href="">(27 valoraciones)</a></div>
-            <h3 id="precio">200€/noche</h3>
-            <p id="localizacion">Montilla (Córdoba)</p>
-            <p class="descripcion">La Casa Rural Finca Buytrón se encuentra en Montilla y ofrece alojamiento con aire acondicionado, piscina privada, vistas a la montaña y terraza. Esta casa rural ofrece vistas a la piscina, jardín y WiFi gratuita.
-
-                <p class="descripcion">La casa rural incluye 8 dormitorios y cocina con lavavajillas y horno.</p>
-                
-                <p class="descripcion">Esta casa rural alberga una piscina al aire libre. El establecimiento ofrece servicio de alquiler de bicicletas.</p>
-                
-                <p class="descripcion">Córdoba se encuentra a 50 km de la Casa Rural Finca Buytrón.</p>
-                
-                <p class="descripcion">¡Hablamos tu idioma!</p>
+            <div id="grupoValPreLoc">
+                <div id="valoracion"><img src="../imagenes/5stars.png" alt="5stars"><a href="">(27 valoraciones)</a></div>
+                <h3 id="precio">200€/noche</h3>
+                <p id="localizacion">Montilla (Córdoba)</p>
+            </div>
+            <div id="bloqueDescripcion">
+                <div id="descripciones">
+                    <p class="descripcion">La Casa Rural Finca Buytrón se encuentra en Montilla y ofrece alojamiento con aire acondicionado, piscina privada, vistas a la montaña y terraza. Esta casa rural ofrece vistas a la piscina, jardín y WiFi gratuita.
+                        <p class="descripcion">La casa rural incluye 8 dormitorios y cocina con lavavajillas y horno.</p>
+                        <p class="descripcion">Esta casa rural alberga una piscina al aire libre. El establecimiento ofrece servicio de alquiler de bicicletas.</p>
+                        <p class="descripcion">Córdoba se encuentra a 50 km de la Casa Rural Finca Buytrón.</p>
+                        <p class="descripcion">¡Hablamos tu idioma!</p>
+                </div>
+                <div id="mapa">
+                    <img src="../imagenes/chincheta.png" alt="ubicacion">
+                </div>
+            </div>
             <div id="iconos">
                 <p class=icon><i class="material-icons">pool</i>Piscina <i class="material-icons">done</i></p>
                 <p class=icon><i class="material-icons">local_parking</i>Aparcamiento<i class="material-icons">clear</i></p class=icon>
@@ -44,7 +49,7 @@
             </div>
         </section>
         <section id="formulario">
-            <p>Realice su reserva rellenando el siguiente formulario:</p>
+            <p id="tituloForm">Realice su reserva rellenando el siguiente formulario:</p>
             <form action="#">
                 <label for="nombre">Nombre:</label><input id="nombre" type="text">  
                 <label for="apellidos">Apellidos:</label><input id="apellidos" type="text">
