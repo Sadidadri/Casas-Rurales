@@ -132,22 +132,25 @@ footer{
         width: 85%;
     }
     #grupoValPreLoc{
-        display: grid;
-        grid-template-rows: 1fr 1fr;
+        margin: 0 auto;
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         
     }
     #valoracion{
-        grid-area:valoracion;
+        order: 2;
         align-items: center;
     }
     #valoracion > img{
         width: 10rem;
     }
     #precio{
-        grid-area:precio;
+        order: 3;
     }
     #localizacion{
-        grid-area:localizacion;
+        order: 1;
     }
     #iconos{
         display: grid;
@@ -168,6 +171,9 @@ footer{
 }
 /* Diseño de monitor */
 @media (min-width: 1025px) {
+    #slider{
+        height: 75vh;
+    }
     #iconos{
         padding: 0.5rem;
         width: 85%;
