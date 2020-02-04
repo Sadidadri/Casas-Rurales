@@ -105,7 +105,9 @@ footer{
         width: 25vw;
     }
     #principal{
+        background-image: url("../imagenes/slider2.jpg");
         background-size: cover;
+        background-position: 0 40%;
         min-height: 65vh;
     }
     #empezarSection{

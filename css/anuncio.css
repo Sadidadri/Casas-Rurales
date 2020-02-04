@@ -68,6 +68,11 @@ header{
 }
 #localizacion{
     padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+#localizacion > span{
+    margin-left: 1rem;
 }
 #mapa{
     display: none;
@@ -150,7 +155,7 @@ footer{
         order: 3;
     }
     #localizacion{
-        order: 1;
+        order: 1;  
     }
     #iconos{
         display: grid;

@@ -73,8 +73,15 @@ h4{
     font-size: 1.4rem;
 }
 .localizacionAnuncio{
+    display: flex;
+    align-items: center;
     grid-area: localizacion;
     font-size: 0.8rem;
+}
+.localizacionAnuncio > div{
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
 }
 .descripcionAnuncio{
     grid-area: descripcion;
@@ -203,5 +210,9 @@ footer{
     #caracteristicas > div{
         margin: 0.5rem 0;
         font-size: 1.05rem;
+    }
+    .localizacionAnuncio > div{
+        padding-left: 2rem;
+    
     }
 }
